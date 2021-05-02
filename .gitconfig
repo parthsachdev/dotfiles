@@ -1,0 +1,16 @@
+[user]
+	name = parthsachdev
+	email = parthsachdev05@gmail.com
+[pull]
+	rebase = false
+[core]
+	editor = nano
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status -s
+	lg = log --oneline --graph --decorate
+
+[init]
+	defaultBranch = master
