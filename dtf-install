@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 git clone --bare https://github.com/parthsachdev/dotfiles.git $HOME/.dtf
 function dtf {
   /usr/bin/git --git-dir $HOME/.dtf/ --work-tree $HOME $@
