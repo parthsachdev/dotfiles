@@ -6,7 +6,7 @@ There are many ways to store dotfiles and manage them. I've used the way describ
 
 ## Installation
 ```bash
-curl -Lks https://github.com/parthsachdev/dotfiles/blob/master/dtf-install | /bin/bash
+curl -Lks https://raw.githubusercontent.com/parthsachdev/dotfiles/master/dtf-install | /bin/bash
 ```
 
 ## Usage
