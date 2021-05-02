@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+git clone --bare https://github.com/parthsachdev/dotfiles.git $HOME/.dtf
+function dtf {
+  /usr/bin/git --git-dir $HOME/.dtf/ --work-tree $HOME $@
+}
+dtf checkout
+if [[ $? = 0 ]]; then
+  echo "Checked out config.";
+ else
+  echo "Backing up pre-existing dot files.";
+  DOTFILE_BACKUP=".dotfiles-backup"
+  mkdir -p "$DOTFILE_BACKUP"
+  dtf checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} "$DOTFILE_BACKUP"/{}
+fi;
+dtf checkout
+dtf config status.showUntrackedFiles no
+
