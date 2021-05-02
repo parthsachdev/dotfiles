@@ -2,7 +2,7 @@
 Dotfiles are all ditterent configuration files on your Linux system. This repository provides a way to track the history of your configuration files and store them remotely so that you can install these files in a new system and customize as per your preferences.
 
 ## Inspiration
-There are many ways to store dotfiles and manage them. I've used the way described by @durdn in the Atlassian website. You can checkout his documentation [https://www.atlassian.com/git/tutorials/dotfiles](here).
+There are many ways to store dotfiles and manage them. I've used the way described by @durdn in the Atlassian website. You can checkout his documentation [here](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ## Installation
 ```bash
