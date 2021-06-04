@@ -20,6 +20,3 @@ alias brandie="tmux new -s brandie"
 
 # dotfiles git
 alias dtf='/usr/bin/git --work-tree $HOME --git-dir $HOME/.dtf/'
-
-# cyberghostvpn
-alias cyber='sudo cyberghostvpn --country-code TW --connect'
