@@ -128,13 +128,14 @@ fi
 shopt -s xpg_echo
 
 # PostgreSQL (for brandie v2)
-export PGDATA="$HOME/coding/brandie/postgres-data"
+# export PGDATA="$HOME/coding/brandie/postgres-data"
+export PGDATA="/opt/postgresql-10.12/data/data_postgres"
 export PSQL_EDITOR=/usr/bin/gedit
 export EDITOR=/usr/bin/gedit
-export PGDATABASE=brandiev2
-# export PGHOST=localhost
-# export PGPORT=5432
-export PGCLUSTER=13/localhost:5432
+export PGDATABASE=brandie
+export PGHOST=localhost
+export PGPORT=5433
+# export PGCLUSTER=13/localhost:5432
 export PGUSER=backend
 
 # Budgie Desktop Pref
@@ -149,11 +150,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
 # Brandie
-# VERSION=v10.23.2
+NODE_VERSION=v16.5.0
 # DISTRO=linux-x64
 
 # nodejsv10 env path to look for modules installed globally
-# export NODE_PATH=/home/parth/.nvm/versions/node/v10.23.2/lib/node_modules
+export NODE_PATH="$NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules"
 
 # .nvm binaries exported to $PATH
 # export PATH=$PATH:$NVM_DIR/versions/node/$VERSION/bin
